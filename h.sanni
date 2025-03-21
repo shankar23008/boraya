@@ -1,0 +1,23 @@
+import time
+class stack:
+    def __init__(self):
+        self.items=[]
+    def push(self,item):
+        self.items.append(item)
+    def pop(self):
+        return self.items.pop()
+    def display(self):
+        return (self.items)
+s=stack()
+start=time.time()
+print("push operations")
+s.push(11)
+s.push(12)
+s.push(13)
+print(s.display())
+print("pop operations")
+print(s.pop())
+print(s.pop())
+print(s.display())
+end=time.time()
+print("runtime of the program is",end-start)
